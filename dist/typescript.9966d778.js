@@ -118,7 +118,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"Ejercicios/typescript/index.ts":[function(require,module,exports) {
+// Interfaces
+var Color;
 
+(function (Color) {
+  Color["Rojo"] = "Rojo";
+  Color["Verde"] = "Verde";
+})(Color || (Color = {}));
+
+var rect = {
+  ancho: 4,
+  alto: 6,
+  color: Color.Verde
+};
+
+function area(r) {
+  return r.alto * r.ancho;
+}
+
+var areaRect = area(rect);
+console.log(areaRect);
+
+rect.toString = function () {
+  return this.color ? "Un rectangulo " + this.color : "Un rectangulo";
+};
+
+console.log(rect.toString());
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63818" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
