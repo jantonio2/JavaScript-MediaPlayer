@@ -30,15 +30,15 @@ peopleAndNumbers.push('Ricardo');
 peopleAndNumbers.push(9007);
 
 //Enum
-enum Color {
-  Rojo = "Rojo",
-  Verde = "Verde",
-  Azul = "Azul"
-}
+// enum Color {
+//   Rojo = "Rojo",
+//   Verde = "Verde",
+//   Azul = "Azul"
+// }
 
-let colorFavorito:Color = Color.Azul;
+// let colorFavorito:Color = Color.Azul;
 
-console.log(`Mi color favorito es ${colorFavorito}`);
+// console.log(`Mi color favorito es ${colorFavorito}`);
 
 //Any
 let comodin:any = "Joker";
